@@ -81,6 +81,7 @@ dns:
       ipcidr: # 在这个网段内的 IP 地址会被考虑为被污染的 IP
         - 240.0.0.0/4
   nameserver-policy:
+    "v.mioffice.cn": https://doh-e1758896-rtx3060.doh.pub/dns-query
     "+.mioffice.cn": '10.228.224.8'
     "+.xiaomi.net": '10.228.224.8'
     "*mi*": '10.228.224.8'

@@ -60,6 +60,7 @@ dns:
     #- https://doh.pub/dns-query
     - https://doh-e1758896-rtx3060.doh.pub/dns-query
     - 10.228.224.8
+    - 10.241.8.40
     # - https://dns.rubyfish.cn/dns-query
     # - tls://dns.rubyfish.cn:853
     # - 119.29.29.29

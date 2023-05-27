@@ -68,7 +68,6 @@ dns:
   fallback:
     # - https://doh.pub/dns-query
     - https://doh-e1758896-rtx3060.doh.pub/dns-query
-    - 10.228.224.8
     # - https://dns.rubyfish.cn/dns-query
     - https://dns.google/dns-query
     # - tls://dns.rubyfish.cn:853

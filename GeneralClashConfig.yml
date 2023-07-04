@@ -66,7 +66,7 @@ dns:
     # - 202.120.224.26
     # - 61.129.42.6
   nameserver-policy:
-    "*.mioffice.com": 10.241.8.40
+    "*.mioffice.cn": 10.241.8.40
   fallback:
     # - https://doh.pub/dns-query
     - https://doh-e1758896-rtx3060.doh.pub/dns-query

@@ -59,21 +59,11 @@ dns:
   nameserver:
     #- https://doh.pub/dns-query
     - https://doh-e1758896-rtx3060.doh.pub/dns-query
-    - 10.228.224.8
-    - 10.228.224.9
-    # - https://dns.rubyfish.cn/dns-query
-    # - tls://dns.rubyfish.cn:853
-    # - 119.29.29.29
-    # - 202.120.224.26
-    # - 61.129.42.6
-  nameserver-policy:
-    "*.mioffice.cn": 10.228.224.8
+    - 119.29.29.29
   fallback:
     # - https://doh.pub/dns-query
-    - https://doh-e1758896-rtx3060.doh.pub/dns-query
-    # - https://dns.rubyfish.cn/dns-query
+    - https://doh-e1758896.doh.pub/dns-query
     - https://dns.google/dns-query
-    # - tls://dns.rubyfish.cn:853
   fake-ip-filter: # fake ip white domain list
     - '*.lan'
     - localhost.ptlogin2.qq.com

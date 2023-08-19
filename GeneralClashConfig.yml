@@ -57,7 +57,7 @@ dns:
   enable: true
   enhanced-mode: fake-ip
   nameserver:
-    #- https://doh.pub/dns-query
+    - 10.228.224.8
     - https://doh-e1758896.doh.pub/dns-query
     # - 119.29.29.29
   fallback:

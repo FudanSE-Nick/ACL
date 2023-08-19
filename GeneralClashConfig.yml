@@ -58,12 +58,12 @@ dns:
   enhanced-mode: fake-ip
   nameserver:
     #- https://doh.pub/dns-query
-    - https://doh-e1758896-rtx3060.doh.pub/dns-query
-    - 119.29.29.29
+    - https://doh-e1758896.doh.pub/dns-query
+    # - 119.29.29.29
   fallback:
     # - https://doh.pub/dns-query
-    - https://doh-e1758896.doh.pub/dns-query
-    - https://dns.google/dns-query
+    # - https://doh-e1758896.doh.pub/dns-query
+    # - https://dns.google/dns-query
   fake-ip-filter: # fake ip white domain list
     - '*.lan'
     - localhost.ptlogin2.qq.com
@@ -171,9 +171,9 @@ cfw-latency-url: http://www.gstatic.com/generate_204
 # Options for profile: true, false
 # Options for mode: true, false
 cfw-conn-break-strategy:
-  proxy: none # none/chain/all
+  proxy: true # none/chain/all
   profile: true # true/false
-  mode: false # true/false
+  mode: true # true/false
 
 # 自定义状态栏图标
 #cfw-tray-icon:

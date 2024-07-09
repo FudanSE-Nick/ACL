@@ -58,14 +58,8 @@ dns:
   enhanced-mode: fake-ip
   nameserver:
     - 10.228.224.8
-    - https://doh-e1758896.doh.pub/dns-query
-    - 119.29.29.29
   fallback:
     - https://doh-e1758896.doh.pub/dns-query
-    - 119.29.29.29
-    # - https://doh.pub/dns-query
-    # - https://doh-e1758896.doh.pub/dns-query
-    # - https://dns.google/dns-query
   fake-ip-filter: # fake ip white domain list
     - '*.lan'
     - localhost.ptlogin2.qq.com

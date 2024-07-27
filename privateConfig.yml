@@ -60,7 +60,6 @@ dns:
     - https://doh-e1758896.doh.pub/dns-query
     - https://dns.alidns.com/dns-query
   fallback:
-    - https://doh-e1758896.doh.pub/dns-query
     - https://dns.google/dns-query
   fake-ip-filter: # fake ip white domain list
     - '*.lan'

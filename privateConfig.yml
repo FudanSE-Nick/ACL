@@ -82,18 +82,14 @@ dns:
   listen: 0.0.0.0:53           #DNS监听地址
   
   default-nameserver:          #解析非IP的dns用的dns服务器,只支持纯IP
-    - 114.114.114.114
-    - 8.8.8.8
+    - 119.29.29.29
     
   enhanced-mode: fake-ip          #DNS模式(redir-host/fake-ip)
   fake-ip-range: 198.18.0.1/16       #Fake-IP解析地址池
 
   nameserver:
     - 119.29.29.29
-    - 223.5.5.5
-    - 180.76.76.76
   fallback:
-    - 8.8.8.8 # 谷歌DNS
     - 1.1.1.1 # Cloudflare DNS
     - 119.29.29.29
     - https://dns.google/dns-query

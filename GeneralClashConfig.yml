@@ -53,7 +53,7 @@ experimental:
 #   'alpha.clash.dev': '::1'
 
 dns:
-  enable: true
+  enable: false
   enhanced-mode: fake-ip
   nameserver:
     - 10.228.224.8

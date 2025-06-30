@@ -96,11 +96,6 @@ dns:
   fake-ip-filter:
     - '*.lan'
     - '*.mioffice.cn'
-  nameserver-policy:
-    '+.mioffice.cn': '10.228.224.8'
-    'rule-set:cn':
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
   nameserver:
     - https://doh-e1758896.doh.pub/dns-query
     - 119.29.29.29

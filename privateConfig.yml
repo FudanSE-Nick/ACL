@@ -95,6 +95,8 @@ dns:
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
     - '*.lan'
+    - "geosite:connectivity-check"
+    - "geosite:private"
   nameserver:
     - https://doh-e1758896.doh.pub/dns-query
     - 119.29.29.29

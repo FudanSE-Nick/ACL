@@ -104,11 +104,10 @@ dns:
     - https://doh-e1758896.doh.pub/dns-query
     - https://dns.google/dns-query
     - tls://1.1.1.1
-  proxy-server-nameserver:
-    - https://doh.pub/dns-query
+  # proxy-server-nameserver:
+  #   - https://doh.pub/dns-query
   direct-nameserver:
     - system
-  direct-nameserver-follow-policy: false
   fallback-filter:
     geoip: true
     geoip-code: CN

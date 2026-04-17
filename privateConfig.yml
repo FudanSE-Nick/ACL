@@ -90,6 +90,7 @@ dns:
   ipv6: false
   default-nameserver:
     - 119.29.29.29
+    - 223.5.5.5
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: blacklist
@@ -97,11 +98,16 @@ dns:
     - '*.lan'
     - "geosite:connectivity-check"
     - "geosite:private"
+    - '*.lan'
+    - '*.local'
+    - 'localhost.ptlogin2.qq.com'
+    - "geosite:connectivity-check"
+    - "geosite:private"
+    - '+.stun.*.*'
+    - '+.stun.*.*.*'
   nameserver:
-    - https://doh-e1758896.doh.pub/dns-query
     - 119.29.29.29
   fallback:
-    - https://doh-e1758896.doh.pub/dns-query
     - https://dns.google/dns-query
     - tls://1.1.1.1
   # proxy-server-nameserver:

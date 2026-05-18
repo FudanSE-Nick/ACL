@@ -91,6 +91,7 @@ dns:
   default-nameserver:
     - 119.29.29.29
     - 223.5.5.5
+    - https://doh-e1758896.doh.pub/dns-query
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: blacklist
@@ -107,18 +108,18 @@ dns:
     - '+.stun.*.*.*'
   nameserver:
     - 119.29.29.29
+    - https://doh-e1758896.doh.pub/dns-query
   fallback:
+    - https://doh-e1758896.doh.pub/dns-query
     - https://dns.google/dns-query
     - tls://1.1.1.1
-  # proxy-server-nameserver:
-  #   - https://doh.pub/dns-query
+  proxy-server-nameserver:
+    - https://doh.pub/dns-query
   direct-nameserver:
     - system
   fallback-filter:
     geoip: true
     geoip-code: CN
-    geosite:
-      - gfw
     ipcidr:
       - 240.0.0.0/4
     domain:

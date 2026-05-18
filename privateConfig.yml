@@ -92,6 +92,11 @@ dns:
     - 119.29.29.29
     - 223.5.5.5
     - https://doh-e1758896.doh.pub/dns-query
+    - system
+    - 223.6.6.6
+    - 8.8.8.8
+    - 2400:3200::1
+    - 2001:4860:4860::8888
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: blacklist
@@ -115,8 +120,12 @@ dns:
     - tls://1.1.1.1
   proxy-server-nameserver:
     - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+    - tls://223.5.5.5
   direct-nameserver:
     - system
+  direct-nameserver: []
+  direct-nameserver-follow-policy: false
   fallback-filter:
     geoip: true
     geoip-code: CN

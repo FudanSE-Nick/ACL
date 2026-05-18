@@ -124,7 +124,6 @@ dns:
     - tls://223.5.5.5
   direct-nameserver:
     - system
-  direct-nameserver: []
   direct-nameserver-follow-policy: false
   fallback-filter:
     geoip: true

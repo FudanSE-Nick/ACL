@@ -97,21 +97,49 @@ dns:
     - 2001:4860:4860::8888
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  fake-ip-filter-mode: blacklist
+  # fake-ip-filter-mode: blacklist
   fake-ip-filter:
-    - '*.lan'
-    - "geosite:connectivity-check"
-    - "geosite:private"
-    - '*.lan'
-    - '*.local'
+    - "*.lan"
+    - "*.local"
+    - "*.localhost"
+    - "*.test"
     - 'localhost.ptlogin2.qq.com'
     - "geosite:connectivity-check"
     - "geosite:private"
-    - '+.stun.*.*'
-    - '+.stun.*.*.*'
+    - 'cf.komect.net'
+    - '*.komect.net'
+    - 'ihr.hq.mogu'
+    - '*.hq.mogu'
+    - "+.stun.*.*"
+    - "+.stun.*.*.*"
+    - "+.stun.*.*.*.*"
+    - "lens.l.google.com"
+    - "*.srv.nintendo.net"
+    - "+.stun.playstation.net"
+    - "xbox.*.*.microsoft.com"
+    - "*.*.xboxlive.com"
+    - "+.msftncsi.com"
+    - "+.msftconnecttest.com"
   nameserver:
     - 119.29.29.29
     - https://doh-e1758896.doh.pub/dns-query
+  # 这些域名 CN DNS 经常被污染或返回慢，直接走 Cloudflare DoH
+  nameserver-policy:
+    "+.google.com": "https://dns.cloudflare.com/dns-query"
+    "+.googleapis.com": "https://dns.cloudflare.com/dns-query"
+    "+.googleapis.cn": "https://dns.cloudflare.com/dns-query"
+    "+.googlevideo.com": "https://dns.cloudflare.com/dns-query"
+    "+.gstatic.com": "https://dns.cloudflare.com/dns-query"
+    "+.youtube.com": "https://dns.cloudflare.com/dns-query"
+    "+.youtu.be": "https://dns.cloudflare.com/dns-query"
+    "+.facebook.com": "https://dns.cloudflare.com/dns-query"
+    "+.twitter.com": "https://dns.cloudflare.com/dns-query"
+    "+.x.com": "https://dns.cloudflare.com/dns-query"
+    "+.github.com": "https://dns.cloudflare.com/dns-query"
+    "+.githubusercontent.com": "https://dns.cloudflare.com/dns-query"
+    "+.openai.com": "https://dns.cloudflare.com/dns-query"
+    "+.chatgpt.com": "https://dns.cloudflare.com/dns-query"
+    "+.anthropic.com": "https://dns.cloudflare.com/dns-query"
   fallback:
     - https://doh-e1758896.doh.pub/dns-query
     - https://dns.google/dns-query

@@ -11,3 +11,4 @@ PROCESS-NAME-REGEX,(?i)^(cmd|powershell|pwsh|bash|zsh|fish|curl|wget|git|ssh|scp
 PROCESS-NAME,claude.exe
 PROCESS-NAME,claude
 PROCESS-NAME,codex.exe
+PROCESS-NAME,codex

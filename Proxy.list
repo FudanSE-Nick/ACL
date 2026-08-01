@@ -8,3 +8,7 @@ DOMAIN-KEYWORD,githubcopilot
 DOMAIN-KEYWORD,exp-tas
 DOMAIN-KEYWORD,micosoft.icu
 PROCESS-NAME-REGEX,(?i)^(cmd|powershell|pwsh|bash|zsh|fish|curl|wget|git|ssh|scp|python3?|node|npm|claude|pnpm|ChatGPT|yarn|go|cargo)(\.exe)?$
+PROCESS-NAME,claude.exe
+PROCESS-NAME,claude
+PROCESS-NAME,codex.exe
+PROCESS-NAME,codex
